@@ -124,24 +124,24 @@ body {
 
 /* Стиль контакты html*/
 
-.contacts-list {
+.contacts__header {
   display: flex;
   padding-left: 0;
   margin: 0;
   list-style: none;
   margin-left: auto;
 }
-.cont-icon {
+.contacts__header-icon {
   display: block;
   margin-right: 10px;
   cursor: pointer;
   fill: var(--title-text-color);
 }
-.cont-icon:hover {
+.contacts__header-icon:hover {
   fill: var(--accent-color);
 }
 
-.adress-list {
+.contacts__header-link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -155,15 +155,15 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
-.adress-list:hover,
-.adress-list:focus {
+.contacts__header-link:hover,
+.contacts__header-link:focus {
   color: var(--accent-color);
 }
-.contacts-link {
+.contacts__header-list {
   margin-right: 30px;
 }
 
-.contacts-link:last-child {
+.contacts__header-list:last-child {
   margin-right: 0;
   margin-bottom: 0;
 }
