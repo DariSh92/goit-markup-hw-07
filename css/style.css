@@ -222,7 +222,7 @@ body {
     url(../images/hero.jpg);
 }
 
-.section-title {
+.main-section__title {
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
@@ -233,7 +233,7 @@ body {
   color: var(--primary-white-color);
 }
 
-.order-button {
+.main-section__order-button {
   display: inline-block;
   font-weight: 700;
   font-size: 16px;
@@ -246,31 +246,6 @@ body {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-
-.icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--filters-color);
-  height: 120px;
-  margin-bottom: 30px;
-}
-
-.features {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.features-list {
-  margin-right: 30px;
-}
-
-.features-list:last-child {
-  margin-right: 0;
 }
 
 /* Модальное окно */
@@ -332,6 +307,31 @@ body {
 }
 
 /* Секция наши особенности html */
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--filters-color);
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.features-list {
+  margin-right: 30px;
+}
+
+.features-list:last-child {
+  margin-right: 0;
+}
 
 .features-title {
   margin-top: 0px;
