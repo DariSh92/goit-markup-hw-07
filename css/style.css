@@ -410,7 +410,8 @@ body {
 }
 
 /* Секция наша команда html*/
-.staff {
+
+.team__staff {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
@@ -420,17 +421,17 @@ body {
   max-width: 100%;
   height: auto;
 }
-.team-margin {
+.socials__margin {
   margin-right: 10px;
 }
-.team-margin:last-child {
+.socials__margin:last-child {
   margin-right: 0;
 }
 .team-section {
   background-color: var(--filters-color);
 }
 
-.team-social {
+.socials__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -441,15 +442,10 @@ body {
 
   transition: background-color var(--duration) var(--time-function),
     color var(--duration) var(--time-function);
-
-  /* transition-property: color;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.team-social:hover,
-.team-social:focus {
+.socials__link:hover,
+.socials__link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
@@ -480,14 +476,14 @@ body {
   background-color: var(--primary-white-color);
 }
 
-.team-list {
+.team {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.team-title {
+.team-section__title {
   margin: 0;
   margin-bottom: 50px;
   font-weight: 700;
@@ -499,7 +495,7 @@ body {
   color: var(--primary-text-color);
 }
 
-.team-leads {
+.team__list {
   margin-left: 30px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -507,7 +503,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-l {
+.socials {
   display: flex;
   padding: 0;
   margin: 0;
@@ -516,11 +512,11 @@ body {
   list-style-type: none;
 }
 
-.team-leads:first-child {
+.team__list:first-child {
   margin-left: 0;
 }
 
-.team-name {
+.team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -530,7 +526,7 @@ body {
   color: var(--primary-text-color);
 }
 
-.team-container {
+.team-section__container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -545,7 +541,7 @@ body {
   background-color: var(--filters-color);
 }
 
-.position {
+.team__position {
   margin: 0;
   margin-bottom: 16px;
   font-size: 16px;
@@ -554,18 +550,9 @@ body {
   color: var(--title-text-color);
 }
 
-.net-list {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.net-list:last-child {
-  margin-right: 0;
-}
 /* Cекция постоянные клиенты html */
 
-.client-title {
+.client__title {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
@@ -576,15 +563,15 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-.client {
+.client__list {
   margin-right: 30px;
 }
 
-.client:last-child {
+.client__list:last-child {
   margin-right: 0;
 }
 
-.client-link {
+.client__link {
   width: 170px;
   height: 92px;
   display: flex;
@@ -600,13 +587,13 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.client-link:hover,
-.client-link:focus {
+.client__link:hover,
+.client__link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
 
-.client-list {
+.client {
   display: flex;
   margin: 0;
   padding: 0;
@@ -902,6 +889,16 @@ body {
 .footer-add {
   flex-direction: column;
   margin-left: 70px;
+}
+
+.net-list {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.net-list:last-child {
+  margin-right: 0;
 }
 /* Форма футер*/
 
