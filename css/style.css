@@ -346,6 +346,7 @@ body {
 }
 
 .features__text {
+  font-family: Roboto;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;
@@ -355,24 +356,25 @@ body {
 }
 
 /* Секция чем мы занимаемся html */
-.ex-img {
+
+.example__list {
   margin-left: 30px;
 }
-.ex-img:first-child {
+.example__list:first-child {
   margin-left: 0;
 }
-.example-list {
+.example {
   list-style: none;
   padding-left: 0;
   margin: 0;
   display: flex;
   width: 370px;
 }
-.label-text p {
+.example__text {
   margin: 0;
 }
 
-.work-title {
+.section-padding__title {
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
@@ -383,12 +385,12 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-.label {
+.example__card {
   position: relative;
   display: flex;
   align-items: flex-end;
 }
-.label-text {
+.example__text {
   font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
