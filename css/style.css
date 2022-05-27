@@ -308,7 +308,7 @@ body {
 
 /* Секция наши особенности html */
 
-.icons {
+.features__icons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -325,15 +325,15 @@ body {
   margin: 0;
 }
 
-.features-list {
+.features__list {
   margin-right: 30px;
 }
 
-.features-list:last-child {
+.features__list:last-child {
   margin-right: 0;
 }
 
-.features-title {
+.features__title {
   margin-top: 0px;
   margin-bottom: 10px;
   font-weight: 700;
@@ -345,7 +345,7 @@ body {
   color: var(--primary-text-color);
 }
 
-.features-text {
+.features__text {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;
