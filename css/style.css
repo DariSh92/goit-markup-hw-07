@@ -39,7 +39,7 @@ body {
   line-height: 1.19;
   text-decoration: none;
 }
-.logo-header {
+.logo__header {
   color: var(--primary-text-color);
 }
 .logo-f {
@@ -52,12 +52,12 @@ body {
   text-decoration: none;
   margin-bottom: 20px;
 }
-.logo-footer {
+.logo-f__footer {
   color: var(--primary-white-color);
 }
 /* Навигация хедер html*/
 
-.menu-link {
+.nav-menu__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -71,11 +71,11 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
-.menu-link:hover,
-.menu-link:focus {
+.nav-menu__link:hover,
+.nav-menu__link:focus {
   color: var(--accent-color);
 }
-.menu-link.active {
+.nav-menu__link-active {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -84,12 +84,10 @@ body {
   font-size: 14px;
   line-height: 1.14;
   transition: color var(--duration) var(--time-function);
-  /* transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  text-decoration: none;
 }
 
-.nav-menu .menu-link.active::after {
+.nav-menu__link-active::after {
   content: "";
   position: absolute;
   display: flex;
@@ -100,8 +98,8 @@ body {
   bottom: -5px;
 }
 
-.menu-link.active:hover,
-.menu-link.active:focus {
+.nav-menu__link-active:hover,
+.nav-menu__link-active:focus {
   color: var(--accent-color);
 }
 .main-nav {
@@ -116,11 +114,11 @@ body {
 .nav-menu .li + .li {
   margin-left: 50px;
 }
-.nav-menu.item {
+.nav-menu__item {
   margin-left: 50px;
   position: relative;
 }
-.nav-menu.item:first-child {
+.nav-menu__item:first-child {
   margin-left: 0;
 }
 
