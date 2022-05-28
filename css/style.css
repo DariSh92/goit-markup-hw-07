@@ -28,6 +28,7 @@ body {
 }
 
 /* Логотип html */
+
 .logo {
   display: block;
   padding-top: 24px;
@@ -55,14 +56,13 @@ body {
   line-height: 1.14;
   text-decoration: none;
   transition: color var(--duration) var(--time-function);
-  /* transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
+
 .nav-menu__link:hover,
 .nav-menu__link:focus {
   color: var(--accent-color);
 }
+
 .nav-menu__link-active {
   display: block;
   padding-top: 32px;
