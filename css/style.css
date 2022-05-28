@@ -378,6 +378,7 @@ body {
   display: flex;
   align-items: flex-end;
 }
+
 .example__text {
   font-family: Roboto;
   font-weight: 700;
@@ -952,6 +953,7 @@ body {
   fill: var(--primary-text-color);
   transition: var(--duration) var(--time-function);
 }
+
 .inputs-bottom {
   display: inline-block;
   flex-direction: column;
