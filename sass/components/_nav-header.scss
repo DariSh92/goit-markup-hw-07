@@ -7,6 +7,13 @@
   background-color: var(--primary-white-color);
 }
 
+.header {
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 1px solid #ececec;
+  background: var(--primary-white-color);
+}
+
 .nav-menu__link {
   display: block;
   padding-top: 32px;
