@@ -21,6 +21,7 @@
 .backdrop.backdrop.is-hidden.modal {
   transform: scale(2);
 }
+
 .modal {
   position: absolute;
   left: 50%;
@@ -93,6 +94,11 @@
   margin-bottom: 20px;
   fill: var(--primary-text-color);
   transition: var(--duration) var(--time-function);
+
+  &:focus-within .inputs-bottom__comment {
+    border-color: var(--accent-color);
+    outline: none;
+  }
 }
 
 .inputs__label {
@@ -137,11 +143,6 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: var(--duration) var(--time-function);
-
-  &:focus-within .inputs-bottom__comment {
-    border-color: var(--accent-color);
-    outline: none;
-  }
 }
 
 .form.inputs {
@@ -191,6 +192,11 @@
   overflow: hidden;
   position: absolute;
   right: 94%;
+
+  &:hover + .agreement__icon,
+  &:focus + .agreement__icon {
+    border-color: var(--accent-color);
+  }
 }
 
 .agreement__checkbox:checked + .agreement__icon {
@@ -199,11 +205,6 @@
   background-image: url("../images/icon\ check21.svg");
   background-origin: border-box;
   background-size: contain;
-
-  &:hover + .agreement__icon,
-  &:focus + .agreement__icon {
-    border-color: var(--accent-color);
-  }
 }
 
 .agreement__icon {
