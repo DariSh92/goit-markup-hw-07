@@ -47,11 +47,11 @@
   background-color: var(--primary-white-color);
   cursor: pointer;
   transition: var(--duration) var(--time-function);
-}
 
-.modal-exit:hover,
-.modal-exit:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .form {
@@ -68,6 +68,22 @@
   margin-bottom: 10px;
   fill: var(--primary-text-color);
   transition: var(--duration) var(--time-function);
+
+  &:focus-within .inputs__form {
+    border-color: var(--accent-color);
+    outline: none;
+  }
+  &:focus-within .inputs__icon {
+    color: var(--accent-color);
+  }
+}
+
+.inputs__icon {
+  position: absolute;
+  left: 12px;
+  transform: translateY(11px);
+  fill: currentColor;
+  transition: var(--duration) var(--time-function);
 }
 
 .inputs-bottom {
@@ -76,22 +92,6 @@
   position: relative;
   margin-bottom: 20px;
   fill: var(--primary-text-color);
-  transition: var(--duration) var(--time-function);
-}
-
-.inputs:focus-within .inputs__form {
-  border-color: var(--accent-color);
-  outline: none;
-}
-.inputs:focus-within .inputs__icon {
-  color: var(--accent-color);
-}
-
-.inputs__icon {
-  position: absolute;
-  left: 12px;
-  transform: translateY(11px);
-  fill: currentColor;
   transition: var(--duration) var(--time-function);
 }
 
@@ -137,10 +137,11 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: var(--duration) var(--time-function);
-}
-.inputs-bottom:focus-within .inputs-bottom__comment {
-  border-color: var(--accent-color);
-  outline: none;
+
+  &:focus-within .inputs-bottom__comment {
+    border-color: var(--accent-color);
+    outline: none;
+  }
 }
 
 .form.inputs {
@@ -198,11 +199,11 @@
   background-image: url("../images/icon\ check21.svg");
   background-origin: border-box;
   background-size: contain;
-}
 
-.agreement__checkbox:hover + .agreement__icon,
-.agreement__checkbox:focus + .agreement__icon {
-  border-color: var(--accent-color);
+  &:hover + .agreement__icon,
+  &:focus + .agreement__icon {
+    border-color: var(--accent-color);
+  }
 }
 
 .agreement__icon {

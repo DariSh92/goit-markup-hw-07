@@ -2,18 +2,20 @@
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--primary-white-color);
-}
 
-.section-padding:nth-child(3) {
-  padding-top: 0;
+  &:nth-child(3) {
+    padding-top: 0;
+  }
 }
 
 .example__list {
   margin-left: 30px;
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
-.example__list:first-child {
-  margin-left: 0;
-}
+
 .example {
   list-style: none;
   padding-left: 0;

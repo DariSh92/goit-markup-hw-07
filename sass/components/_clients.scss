@@ -9,12 +9,20 @@
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-.client__list {
-  margin-right: 30px;
+
+.client {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-.client__list:last-child {
-  margin-right: 0;
+.client__list {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .client__link {
@@ -28,20 +36,10 @@
   border-radius: 4px;
   color: var(--icon-color);
   transition: color var(--duration) var(--time-function);
-  /* transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
-}
 
-.client__link:hover,
-.client__link:focus {
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color);
-}
-
-.client {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
 }
